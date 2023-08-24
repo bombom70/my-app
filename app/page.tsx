@@ -1,11 +1,12 @@
 import styles from './page.module.css';
-import EventList from '../components/EventList';
+import Header from '../components/header/Header';
+import AsteroidList from '../components/AsteroidList/AsteroidList';
+import Link from 'next/link';
 
-
-export default function Home() {
+export default async function Home() {
   return (
-    <main>
-      <EventList />
-    </main>
+    <div className={styles.container}>
+      <AsteroidList/>
+    </div>
   )
 }
